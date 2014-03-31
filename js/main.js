@@ -5,7 +5,7 @@ console.log("Ready");
 
 $("#heading").on("click",function(){
 			console.log("Clcik");
-			window.location= "http://localhost:8888/simply-website/index.html";
+			window.location= "http://sonalisharma.github.io/simply-website/";
 });
 
 
