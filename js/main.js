@@ -26,5 +26,14 @@ console.log("Ready");
         //$(this).tab('show');
     });
 
+    jQuery('#addVideo').on('click', function (e) {
+    	console.log("Reached add");
+        e.preventDefault();
+        console.log(jQuery("#num_cart").text());
+
+        //jQuery( "tab-pane" ).toggle();
+        //$(this).tab('show');
+    });
+
 
 });
