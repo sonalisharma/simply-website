@@ -14,6 +14,7 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <script src="js/main.js"></script>
 
 
@@ -48,21 +49,9 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
               </ul>
             </div>
           </div>
@@ -84,16 +73,73 @@
         </ul>
       </div>
 
-       <div class="row">
-        <hr>
-        <p>Tutorials selected  <a href="#"><span class="badge" style="font-size:2em;margin-left:0.5em;">1</span></a></p>
-       </div>
+       <hr>
+
+      <div class="row">
+        <label for="filterFormat">Additional Filters</label><br>
+        <label for="filterFormat">Tutorial Format</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            Video
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            Audio
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            Text
+          </label>
+        </div>
+      </div>
 
        <div class="row">
-        <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-hand-right"></span><a href="send.html"> Ready to Send</a>
-        </button>
-       </div>
+        <label for="filterFormat">Average Rating</label>
+          <ul class="list-group">
+             <li class="list-group-item"><img src="img/filter_avgrating1.png" alt="..."></li>
+             <li class="list-group-item"><img src="img/filter_avgrating2.png" alt="..."></li>
+             <li class="list-group-item"><img src="img/filter_avgrating3.png" alt="..."></li>
+             <li class="list-group-item"><img src="img/filter_avgrating4.png" alt="..."></li>
+          </ul>
+      </div>
+
+      <div class="row">
+        <label for="filterFormat">Device</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            Macbook
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            iPhone
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            iPad
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            PC
+          </label>
+        </div>
+      </div>
+
+
+
+
 
          
     </div>
@@ -218,68 +264,17 @@
     </div>
 
   </div>
-      <div class="col-md-2">
-      <div class="row">
-        <label for="filterFormat">Additional Filters</label><br>
-        <label for="filterFormat">Tutorial Format</label>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            Video
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            Audio
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            Text
-          </label>
-        </div>
-      </div>
+    <div class="col-md-2">
+       <div class="row">
+        <p>Tutorials selected  <a href="#"><span class="badge" style="font-size:2em;margin-left:0.5em;">1</span></a></p>
+       </div>
 
        <div class="row">
-        <label for="filterFormat">Average Rating</label>
-          <ul class="list-group">
-             <li class="list-group-item"><img src="img/filter_avgrating1.png" alt="..."></li>
-             <li class="list-group-item"><img src="img/filter_avgrating2.png" alt="..."></li>
-             <li class="list-group-item"><img src="img/filter_avgrating3.png" alt="..."></li>
-             <li class="list-group-item"><img src="img/filter_avgrating4.png" alt="..."></li>
-          </ul>
-      </div>
+        <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-hand-right"></span><a href="send.html"> Ready to Send</a>
+        </button>
+       </div>
 
-      <div class="row">
-        <label for="filterFormat">Device</label>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            Macbook
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            iPhone
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            iPad
-          </label>
-        </div>
-
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            PC
-          </label>
-        </div>
-      </div>
 
       </div>
   </div>
@@ -301,7 +296,7 @@
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default btn-lg" style:"float:left">
+                  <button type="button" class="btn btn-default btn-lg" style:"float:left" id="addVideo">
                     <span class="glyphicon glyphicon-plus"></span>ADD
                   </button>
                   Views<span class="badge" style="font-size:1em;margin-left:0.5em;">10000</span>

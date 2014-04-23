@@ -3,7 +3,17 @@ jQuery(document).ready(function(){
 
 console.log("Ready");
 
-    jQuery('.nav li a').on('click', function (e) {
+	/*jQuery('.navbar-nav li a').on("click", function(e) {
+		  var obj = jQuery(this);
+		  console.log("Click on nav");
+		  if (!obj.hasClass('active')) {
+		    obj.addClass('active');
+		  }
+		  e.preventDefault();
+	});
+*/
+
+    jQuery('.nav-pills li a').on('click', function (e) {
     	console.log("Reached click");
         e.preventDefault();
         console.log(jQuery(this).attr("href"));
