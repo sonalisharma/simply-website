@@ -64,5 +64,12 @@ console.log("Ready");
 
      });
 
+     jQuery("#searchSignInform").submit(function(event)
+     {
+     	console.log("search sign in");
+     	window.location.href='send.html';
+     	event.preventDefault();
+     })
+
 
 });
