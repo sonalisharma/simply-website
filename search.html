@@ -15,6 +15,7 @@
     <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
     <script src="js/main.js"></script>
 
 
@@ -60,6 +61,9 @@
       </div>
 
 <div class="container">
+  <div class="row">
+   <!-- <p>Simply allows you to filter, preview and select one or more tutorials from our vast collection. You can then send the selected tutorials to your parents. When you are ready to send the tutorials just click the Ready to send button on the right.</p>-->
+  </div>
       <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-2">
@@ -80,19 +84,19 @@
         <label for="filterFormat">Tutorial Format</label>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             Video
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             Audio
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             Text
           </label>
         </div>
@@ -112,40 +116,35 @@
         <label for="filterFormat">Device</label>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             Macbook
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             iPhone
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             iPad
           </label>
         </div>
 
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">
+            <input type="checkbox" value="" checked>
             PC
           </label>
         </div>
       </div>
-
-
-
-
-
          
     </div>
     <div class="col-md-8">
-      <div class="row">
-      <div class="navbar-form navbar-left" role="search">
+      <div class="row" style="margin-top:-6px;">
+      <div class="navbar-form navbar-left" role="search" style="float:right">
               <input type="text" class="form-control" placeholder="Search tutorials">
               <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
       </div>
@@ -266,13 +265,15 @@
   </div>
     <div class="col-md-2">
        <div class="row">
-        <p>Tutorials selected  <a href="#" id="num_cart"><span class="badge" style="font-size:2em;margin-left:0.5em;">1</span></a></p>
+        <p>Tutorials selected  <a href="#"><span id="num_cart" class="badge" style="font-size:2em;margin-left:0.5em;">0</span></a></p>
        </div>
 
        <div class="row">
+        <a href="#signInModal" data-toggle="modal">
         <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-hand-right"></span><a href="send.html"> Ready to Send</a>
+          <span class="glyphicon glyphicon-hand-right"></span> Ready to Send<h6><p class="text-muted">*Sign-in required</p></h6>
         </button>
+        </a>
        </div>
 
 
@@ -296,7 +297,7 @@
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default btn-lg" style:"float:left" id="addVideo">
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">
                     <span class="glyphicon glyphicon-plus" id="search_add"></span>ADD
                   </button>
                   Views<span class="badge" style="font-size:1em;margin-left:0.5em;">10000</span>
@@ -347,6 +348,27 @@
             </div>
         </div>
     </div>
+
+  <div id="signInModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+        <form class="form-signin" role="form">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <input type="email" class="form-control" placeholder="Email address" required autofocus>
+          <input type="password" class="form-control" placeholder="Password" required>
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="searchSignIn">Sign in</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="searchRegister">Register</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

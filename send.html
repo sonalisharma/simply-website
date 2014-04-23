@@ -61,76 +61,52 @@
 
   <div class="container">
       <div class="row">
-        <div class="col-md-10">
-           <h3>Hi,</h3>
+           <h4>Hi,</h4>
           <div class="checkbox-inline" style="margin-top:-65px;margin-left:20px;">
             <label>
-              <input type="text" value="">
+              <input type="text" value="" id="greetingText">
             </label>
+            <label>
+              Recipient's Email:
+              <input type="text" value=""  id="recipientEmail">
+            </label> 
           </div>
-      </div>
-    </div>
-    <hr>
-
-    <div class="row">
-      <div class="col-md-10">
-        <h3>Hope you will find this helpful and I also want to say that,</h3>
-        <textarea rows="4" cols="80" placeholder="I have picked a turorial that will be really helpful, I would love to hear all about it from you!!">
+          <h4>Hope you will find this helpful and I also want to say that,</h4>
+        <textarea rows="4" cols="80" id="messageText">
         </textarea>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10">
         <p>Record your own video message (optional)</p>
         <a href="#recordOwnVideo" data-toggle="modal"><span class="glyphicon glyphicon-camera" style="font-size:2em;"></span></a>
-      </div>
-    </div>
-
-    <hr>
-    <div class="row">
-      <div class="col-md-10">
-       <div class="checkbox-inline">
+        <hr>
+        <!--
+        <h4>Greetings</h4>
+          <div class="checkbox-inline">
             <label>
-              <input type="checkbox" value="">
+              <input type="checkbox" value="" name>
               Love
             </label>
           </div>
           <div class="checkbox-inline">
             <label>
-              <input type="checkbox" value="">
+              <input type="checkbox" value="" name="chkGreeting">
               Let me know how you find it!!
             </label>
           </div>
           <div class="checkbox-inline">
             <label>
-              <input type="checkbox" value="">
+              <input type="checkbox" value="" name="chkGreeting">
               Goodluck!!
             </label>
-          </div>
-      </div>
-    </div>
-
-       <div class="row">
-      <div class="col-md-10">
-        <div class="checkbox-inline">
+          </div> -->
             <label>
               Your name:
-              <input type="text" value="">
+              <input type="text" value="" id="senderName">
             </label>
-          </div>
-      
-    </div>
-  </div>
-
-     <hr>
-    <div class="row">
-      <div class="col-md-10">
-
-         <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon glyphicon-eye-open"></span><a href="#preview" data-toggle="modal"> PREVIEW</a>
+            
+            <hr>
+        <button type="button" class="btn btn-default btn-lg" id="preview">
+          <span class="glyphicon glyphicon glyphicon-eye-open"></span><a href="#modalPreview" data-toggle="modal"> PREVIEW</a>
         </button>
-      </div>
+
     </div>
 
 </div>
@@ -138,69 +114,6 @@
 </div>
 
 <!--Modal -->
-    <div id="ReadyToSend" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-
-                <div class="modal-body">
-                    <iframe width="400" height="300" frameborder="0" allowfullscreen="">
-
-
-
-                    </iframe>
-                </div>
-
-                <div class="modal-footer">
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-        <div id="myModalAudio" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-
-                <div class="modal-body">
-                    <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-                </div>
-
-                <div class="modal-footer">
-                  
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModalText" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-
-                <div class="modal-body">
-                    <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-                </div>
-
-                <div class="modal-footer">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-
      <div id="recordOwnVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -225,7 +138,7 @@
     </div>
 
 
-     <div id="preview" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div id="modalPreview" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -234,17 +147,11 @@
                 </div>
 
                 <div class="modal-body">
-                   <p>Dear</p>
-                      <p> Mom, Hope you will find this helpful and I also want to say that, I am impressed the way youare learning about new technology. Hope you continue to enjoy this streak.</p>
-                      <p>Love</p>
-                      <p>Sonali</p>
-                    <iframe src="http://www.youtube.com/watch?v=z3Min1pojo8&output=embed" width="400" height="300" frameborder="0" allowfullscreen="" >
-                    
-                    </iframe>
+                  
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default btn-lg">
+                  <button type="button" class="btn btn-default btn-lg" id="send_preview" data-dismiss="modal" aria-hidden="true">
                     <span class="glyphicon glyphicon glyphicon-ok"></span>Send
                   </button>
                   <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true">

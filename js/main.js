@@ -11,7 +11,8 @@ console.log("Ready");
 		  }
 		  e.preventDefault();
 	});
-*/
+*/	
+
 
     jQuery('.nav-pills li a').on('click', function (e) {
     	console.log("Reached click");
@@ -29,11 +30,39 @@ console.log("Ready");
     jQuery('#addVideo').on('click', function (e) {
     	console.log("Reached add");
         e.preventDefault();
-        console.log(jQuery("#num_cart").text());
+        var num = parseInt(jQuery("#num_cart").text());
+        console.log(jQuery("#num_cart").html(num+1));
 
         //jQuery( "tab-pane" ).toggle();
         //$(this).tab('show');
     });
+
+
+     jQuery('#send_preview').on('click', function (e) {
+    	console.log("Reached add");
+        e.preventDefault();
+        console.log(jQuery("#preview .modal-body").text());
+        //jQuery( "tab-pane" ).toggle();
+        //$(this).tab('show');
+    });
+
+     jQuery('#preview').on("click",function(e) {
+     	console.log(jQuery("#greetingText").val());
+     	var html = 'Hi '+ jQuery("#greetingText").val()+'<p>Hope you will find this helpful and I also want to say that,';
+     	html = html + jQuery("#messageText").val();
+     	html = html + '<p>Love,</p>' + jQuery("#senderName").val();
+     	$('input:checkbox[name=chkGreeting]').each(function() 
+		{    
+		    if(jQuery(this).is(':checked'))
+		    console.log(html);
+
+		});
+
+		jQuery("#modalPreview .modal-body").html("");
+		html = html + '<img src="img/send_preview.png" style="zoom:0.75"/>'
+		jQuery("#modalPreview .modal-body").append(html);
+
+     });
 
 
 });
