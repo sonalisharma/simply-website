@@ -43,6 +43,7 @@ jQuery(".all_tutorials").show();
     	console.log("Reached add");
         e.preventDefault();
         console.log(jQuery("#preview .modal-body").text());
+        window.location.href='user.html';
         //jQuery( "tab-pane" ).toggle();
         //$(this).tab('show');
     });
@@ -68,8 +69,19 @@ jQuery(".all_tutorials").show();
      jQuery("#searchSignInform").submit(function(event)
      {
      	console.log("search sign in");
+     	jQuery("#successMsg").show();
      	window.location.href='send.html';
      	event.preventDefault();
+     });
+
+     jQuery("#indexSignInform").submit(function(event)
+     {
+     	console.log("search sign in");
+     	jQuery("#successMsg").hide();
+     	window.location.href='user.html';
+     	event.preventDefault();
+     	
+
      });
 
 
