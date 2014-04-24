@@ -61,12 +61,12 @@
               <a class="navbar-brand" href="index.html">Simply</a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav pull-right">
                 <li><a href="aboutus.html">About</a></li>
                 <li><a href="contactus.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="#signInModal" data-toggle="modal">Sign in</a></li>
               </ul>
-                    <p class="navbar-text navbar-right navbar-link" style="margin-right:70px;"><a href="#signInModal" data-toggle="modal">Sign in</a></p>
+                   <!-- <p class="navbar-text navbar-right navbar-link" style="margin-right:70px;"><a href="#signInModal" data-toggle="modal">Sign in</a></p> -->
             </div>
           </div>
         </div>
@@ -74,26 +74,29 @@
       </div>
 
 <div class="container">
-  <div class="row">
-   <!-- <p>Simply allows you to filter, preview and select one or more tutorials from our vast collection. You can then send the selected tutorials to your parents. When you are ready to send the tutorials just click the Ready to send button on the right.</p>-->
-  </div>
+      <div class="row">
+        <div class="navbar-form navbar-left" role="search" style="margin-top:-10px;">
+                <input type="text" class="form-control" placeholder="Search tutorials">
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                Can't find the tutorial? Record your own and save <a href="#recordOwnVideo" data-toggle="modal"><span class="glyphicon glyphicon-camera" style="font-size:2em;"></span></a>
+        </div>
+      </div>
       <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-2">
-      <div class="row">
+
         <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#all_tutorials" data-toggle="tab">All Tutorials</a></li>
-          <li><a href="#all_basic" data-toggle="tab">Basic</a></li>
-          <li><a href="#all_tutorials" data-toggle="tab">Media</a></li>
-          <li><a href="#all_basic" data-toggle="tab">Communication</a></li>
-          <li><a href="#all_basic" data-toggle="tab">Online search</a></li>
+          <li class="active"><a href=".all_tutorials" data-toggle="tab">All Tutorials</a></li>
+          <li><a href=".all_basic" data-toggle="tab">Basic</a></li>
+          <li><a href=".all_communication" data-toggle="tab">Communication</a></li>
+          <li><a href=".all_internet" data-toggle="tab">Internet</a></li>
+          <li><a href=".all_tv" data-toggle="tab">Entertainment</a></li>
+          <li><a href=".all_security" data-toggle="tab">Security</a></li>
         </ul>
 
-      </div>
 
        <hr>
 
-      <div class="row">
         <label for="filterFormat">Additional Filters</label><br>
         <label for="filterFormat">Tutorial Format</label>
         <div class="checkbox">
@@ -114,9 +117,7 @@
             Text
           </label>
         </div>
-      </div>
 
-       <div class="row">
         <label for="filterFormat">Average Rating</label>
           <ul class="list-group">
              <li class="list-group-item"><img src="img/filter_avgrating1.png" alt="..."></li>
@@ -124,9 +125,7 @@
              <li class="list-group-item"><img src="img/filter_avgrating3.png" alt="..."></li>
              <li class="list-group-item"><img src="img/filter_avgrating4.png" alt="..."></li>
           </ul>
-      </div>
 
-      <div class="row">
         <label for="filterFormat">Device</label>
         <div class="checkbox">
           <label>
@@ -153,147 +152,210 @@
             PC
           </label>
         </div>
-      </div>
          
     </div>
     <div class="col-md-8">
-      <div class="row" style="margin-top:-6px;">
-      <div class="navbar-form navbar-left" role="search" style="float:right">
-              <input type="text" class="form-control" placeholder="Search tutorials">
-              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-      </div>
-    </div>
+
       <div class="tab-content">
-        <div class="tab-pane active" id="all_tutorials"> 
-              <div class="row">
+        <div class="tab-pane all_basic all_tutorials"> 
+          <h5>BASIC</h5>
+            <div class="row">
                 <div class="col-sm-6 col-md-3">
                   <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut1.png" 
-                     alt="Generic placeholder thumbnail">
+                     <img src="img/results/FreeUpMemory.png" alt="Generic placeholder thumbnail">
                   </a>
+                  <p>FIX A SLOW COMPUTER</p>
                </div>
-               <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 test">
                   <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut2.png" 
-                     alt="Generic placeholder thumbnail">
+                     <img src="img/results/UninstallProgram_PC.png" alt="Generic placeholder thumbnail">
                   </a>
+                  <p>UNINSTALL PROGRAMS</p>
                </div>
-               <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/RemoveVirus.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>FIX COMPUTER VIRUSES</p>
+               </div>
+                <div class="col-sm-6 col-md-3 audio">
                   <a href="#myModalAudio" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut3.png" 
-                     alt="Generic placeholder thumbnail">
+                     <img src="img/results/audio.jpeg" alt="Generic placeholder thumbnail">
                   </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut4.png" 
-                     alt="Generic placeholder thumbnail">
+                  <p>PREVENT PHISHING ATTACK</p>
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-sm-6 col-md-3 text">
+                  <a href="#myModalText" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/text.jpeg" alt="Generic placeholder thumbnail">
                   </a>
+                  <p>TEST INTERNET SPEED</p>
                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut1_audio.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut2.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut3.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut4.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut1.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut2.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut3.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-               <div class="col-sm-6 col-md-3">
-                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut4.png" 
-                     alt="Generic placeholder thumbnail">
-                  </a>
-               </div>
-              </div>
-
+          </div>
         </div>
-
-
-        <!-- Content basic -->
-
-      <div class="tab-content">
-        <div class="tab-pane" id="all_basic"> 
-              <div class="row">
+        <div class="tab-pane all_communication all_tutorials"> 
+          <h5>COMMUNICATION</h5>
+            <div class="row">
                 <div class="col-sm-6 col-md-3">
                   <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/all_tut1.png" 
-                     alt="Generic placeholder thumbnail">
+                     <img src="img/results/VideoCall.png" alt="Generic placeholder thumbnail">
                   </a>
-                 </div>
-                 <div class="col-sm-6 col-md-3">
-                    <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                       <img src="img/all_tut2.png" 
-                       alt="Generic placeholder thumbnail">
-                    </a>
-                 </div>
-                 <div class="col-sm-6 col-md-3">
-                    <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                       <img src="img/all_tut3.png" 
-                       alt="Generic placeholder thumbnail">
-                    </a>
-                 </div>
-              </div>
+                  <p>MAKE A VIDEO CALL</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/TextMessage.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>SEND TEXT MESSAGE</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/FreeCallonInternet.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>FREE LONG DISTANCE CALL</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/OrganizeEmailInbox.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>ORGANISE INBOX</p>
+                </div>
+          </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 text">
+                  <a href="#myModalText" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/text.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>SOCIAL MEDIA</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/EmailAttachment.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>EMAIL ATTACHMENTS</p>
+               </div>
+                <div class="col-sm-6 col-md-3 audio">
+                  <a href="#myModalAudio" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/audio.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>SETUP EMAIL</p>
+               </div>
+          </div>
+        </div>  
+        <div class="tab-pane all_internet all_tutorials"> 
+          <h5>INTERNET</h5>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/SecureHomeWifi.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>WIFI SETUP</p>
+               </div>
+                <div class="col-sm-6 col-md-3 audio">
+                  <a href="#myModalAudio" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/audio.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>SAFE PASSWORDS</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/StopPopUps.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>STOP POPUPS</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/PrinterSetup.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>PRINTER SETUP</p>
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-sm-6 col-md-3 text">
+                  <a href="#myModalText" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/text.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>PRINTER PROBLEMS </p>
+               </div>
+          </div>
         </div>
+        <div class="tab-pane all_tv"> 
+          <h5>ENTERTAINMENT</h5>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/ComputerTVConnect.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>TV CONNECTIONS</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/HomeEntertainment.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>HOME ENTERTAINMENT</p>
+               </div>
+                <div class="col-sm-6 col-md-3 audio">
+                  <a href="#myModalAudio" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/audio.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>TV ON DEMAND</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/SurroundSound.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>SURROUND SOUND</p>
+                </div>
+          </div>
+        </div>
+        <div class="tab-pane all_security all_tutorials"> 
+          <h5>SECURITY</h5>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 text">
+                  <a href="#myModalText" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/text.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>GOOD PASSWORDS</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/WirelessNetwork.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>SECURE WIFI</p>
+               </div>
+                <div class="col-sm-6 col-md-3 test">
+                  <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/PublicWifi.png" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>PUBLIC WIFI</p>
+               </div>
+                <div class="col-sm-6 col-md-3 audio">
+                  <a href="#myModalAudio" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/audio.jpeg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>PARENTAL CONTROLS</p>
+                </div>
+          </div>
+        </div>
+        
       </div>
     </div>
-
-  </div>
-    <div class="col-md-2">
-       <div class="row">
+    
+    <div class="col-md-2 ">
         <p>Tutorials selected  <a href="#"><span id="num_cart" class="badge" style="font-size:2em;margin-left:0.5em;">0</span></a></p>
-       </div>
 
-       <div class="row">
         <a href="#signInModal" data-toggle="modal">
         <button type="button" class="btn btn-default btn-lg">
           <span class="glyphicon glyphicon-hand-right"></span> Ready to Send<h6><p class="text-muted">*Sign-in required</p></h6>
         </button>
         </a>
-       </div>
+    </div>   
+      <!-- Content basic -->
 
 
-      </div>
-  </div>
 
+</div>
 </div>
 </div>
 
@@ -307,7 +369,8 @@
                 </div>
 
                 <div class="modal-body">
-                    <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+                  <h4>How make a free call using internet</h4>
+                    <img src="img/preview.jpeg"/>
                 </div>
 
                 <div class="modal-footer">
@@ -332,11 +395,17 @@
                 </div>
 
                 <div class="modal-body">
-                    <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+                  <h4>How to prevent phising attack</h4>
+                    <img src="img/results/audio.jpeg"/>
                 </div>
 
                 <div class="modal-footer">
-                  
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">
+                    <span class="glyphicon glyphicon-plus" id="search_add"></span>ADD
+                  </button>
+                  Views<span class="badge" style="font-size:1em;margin-left:0.5em;">10000</span>
+                  Likes <span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span>
+                   
                 </div>
             </div>
         </div>
@@ -351,13 +420,17 @@
                 </div>
 
                 <div class="modal-body">
-                    <iframe width="400" height="300" frameborder="0" allowfullscreen="">
-
-                    </iframe>
+                  <h4>How to test internet speed</h4>
+                    <img src="img/results/text.jpeg"/>
                 </div>
 
                 <div class="modal-footer">
-                    
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">
+                    <span class="glyphicon glyphicon-plus" id="search_add"></span>ADD
+                  </button>
+                  Views<span class="badge" style="font-size:1em;margin-left:0.5em;">10000</span>
+                  Likes <span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span>
+                   
                 </div>
             </div>
         </div>
@@ -384,7 +457,31 @@
 
   </div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <div id="recordOwnVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+
+                <div class="modal-body">
+                  <img src="img/recordOwn.jpeg"/>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">
+                    <span class="glyphicon glyphicon-plus" id="search_add"></span>RECORD
+                  </button>
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">STOP
+                  </button>
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

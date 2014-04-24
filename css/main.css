@@ -5,3 +5,42 @@
 #team img {
 	zoom:0.5;
 }
+
+.thumbnail {
+	margin-bottom: 5px !important;
+}
+
+#successMsg{
+	display:block;
+}
+
+.audio img{
+	zoom:0.41;
+}
+
+.text img{
+	zoom:0.41;
+}
+
+#myModalVideo img{
+zoom:1.5;
+text-align:center;
+}
+
+#myModalAudio img{
+zoom:0.50;
+text-align:center;
+}
+
+
+#myModalText img{
+	border-color:black;
+zoom:0.50;
+text-align:center;
+}
+
+#recordOwnVideo img{
+
+}
+
+

@@ -12,6 +12,7 @@ console.log("Ready");
 		  e.preventDefault();
 	});
 */	
+jQuery(".all_tutorials").show();
 
 
     jQuery('.nav-pills li a').on('click', function (e) {
@@ -69,7 +70,15 @@ console.log("Ready");
      	console.log("search sign in");
      	window.location.href='send.html';
      	event.preventDefault();
-     })
+     });
+
+
+	jQuery("#indexSignIn").submit(function(event)
+     {
+     	console.log("search sign in");
+     	window.location.href='send.html';
+     	event.preventDefault();
+     });
 
 
 });
