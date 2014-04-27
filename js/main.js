@@ -74,23 +74,25 @@ jQuery(".all_tutorials").show();
      	event.preventDefault();
      });
 
-     jQuery("#indexSignInform").submit(function(event)
+
+     jQuery("#indexRegister").click(function(event)
      {
-     	console.log("search sign in");
-     	jQuery("#successMsg").hide();
-     	window.location.href='user.html';
-     	event.preventDefault();
-     	
+        console.log("search sign in");
+        jQuery("#successMsg").hide();
+        window.location.href='search1.html';
+        event.preventDefault();
+        
 
      });
 
-
-	jQuery("#indexSignIn").submit(function(event)
+	jQuery("#indexSignIn").click(function(event)
      {
      	console.log("search sign in");
-     	window.location.href='send.html';
+     	window.location.href='user1.html';
      	event.preventDefault();
      });
+
+
 
 
 });

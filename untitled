@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="technology tutorials, parents, tech, simple tutorials, beginners">
-    <meta name="description" content="time saving, easy to use and simple technology tutorials for parents">
+    <meta name="description" content="">
     <meta name="author" content="">
-    <meta http-equiv="X-Frame-Options" content="allow">
+
 
     <title>Simply - Get your parents up to speed with technology</title>
 
@@ -60,14 +59,10 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav pull-right">
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="howdoesitwork.html">How does it work |</a></li>
-                <li><a href="contactus.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="aboutus.html">About Us |</a></li>
+                <li><a href="contactus.html">Contact |</a></li>
                 <li><a href="#signInModal" data-toggle="modal">Sign in </a></li>
-
               </ul>
-             <!-- <p class="navbar-text navbar-right navbar-link" style="margin-right:70px;"><a href="#signInModal" data-toggle="modal">Sign in</a></p>-->
             </div>
           </div>
         </div>
@@ -75,58 +70,8 @@
       </div>
 
       <div class="container">
-        <h4><em> Check out what our users have to say about us!!</em></h4>
-        <br>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="img/testimonial/test4.jpg" alt="...">
-              </div>
-              <blockquote>
-                  <p>I was pulling my hair out trying to help my dad send photos. Wish I had known about this sooner.</p>
-                  <footer>Miriam, 23, Saratoga, FL</footer>
-                </blockquote>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="img/testimonial/test5.jpg" alt="...">
-              </div>
-              <blockquote>
-                  <p>I sent Simply tutorials to my in-laws in the Philippines. Now we have weekly video chats. It’s important to me for my kids to know where they come from.</p>
-                  <footer>Neil, 42, Portland, OR</footer>
-                </blockquote>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="img/testimonial/test6.jpg" alt="...">
-              </div>
-              <blockquote>
-                  <p>I sent Nana videos on how to send texts and now we send photos to each other all the time</p>
-                  <footer>Arielle, 8, Kansas City, MO</footer>
-                </blockquote>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="img/testimonial/test1.jpg" alt="...">
-              </div>
-              <blockquote>
-                  <p>I can finally use Facebook on my phone to keep in touch with my grandkids! Simply made it so easy to learn</p>
-                  <footer> Sophia, 53, Raleigh, NC</footer>
-                </blockquote>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="img/testimonial/test2.jpg" alt="...">
-              </div>
-              <blockquote>
-                  <p>My newphew sent me a Simply tutorial on texting and I actually learned how to do it.</p>
-                  <footer> Mort, 76, Seattle, WA</footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
+
+      </div>
 
 </div>
 
@@ -151,6 +96,27 @@
             </div>
         </div>
     </div>
+
+  <div id="signInModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+        <form class="form-signin" role="form" id="indexSignInform">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <input type="email" class="form-control" placeholder="Email address" required autofocus>
+          <input type="password" class="form-control" placeholder="Password" required>
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="indexSignIn">Sign in</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="indexRegister">Register</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
