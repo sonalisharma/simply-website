@@ -64,6 +64,7 @@
               <ul class="nav navbar-nav pull-right">
                 <li><a href="aboutus.html">About Us |</a></li>
                 <li><a href="howdoesitwork.html">How it works |</a></li>
+                <li><a href="search.html">Explore tutorials |</a></li>
                 <li><a href="contactus.html">Contact |</a></li>
                 <li><a href="user1.html" data-toggle="modal">Signed in as Alex</a></li>
               </ul>
@@ -120,7 +121,7 @@
         </div>
 
         <label for="filterFormat">Average Rating</label>
-          <ul class="list-group">
+          <ul class="list-group"  style="cursor:pointer">
              <li class="list-group-item"><img src="img/filter_avgrating1.png" alt="..."></li>
              <li class="list-group-item"><img src="img/filter_avgrating2.png" alt="..."></li>
              <li class="list-group-item"><img src="img/filter_avgrating3.png" alt="..."></li>
@@ -192,6 +193,13 @@
                      <img src="img/results/text.jpeg" alt="Generic placeholder thumbnail">
                   </a>
                   <p>TEST INTERNET SPEED</p>
+               </div>
+               <div class="col-sm-6 col-md-3 text">
+                  <a href="#myModalText" class="thumbnail" data-toggle="modal">
+                     <img src="img/results/custom.jpg" alt="Generic placeholder thumbnail">
+                  </a>
+                  <p>USING FACEBOOK</p>
+                  <h6><p class="text-muted">*Created by you</p></h6>
                </div>
           </div>
         </div>
@@ -451,12 +459,10 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
           <button class="btn btn-lg btn-primary btn-block" id="searchSignIn">Sign in</button>
-          <button class="btn btn-lg btn-primary btn-block" id="searchRegister">First Time? Register</button>
-          <h6><p class="text-muted">*Simply respects your privacy and will never share your information with a third-party. Creating an account allows you to save a history of your tutorials and manage personalized content.</p></h6>          
+          <button class="btn btn-lg btn-primary btn-block" id="searchRegister">Register</button>
         </form>
       </div>
     </div>
-
   </div>
 
      <div id="recordOwnVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

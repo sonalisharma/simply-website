@@ -64,7 +64,9 @@
               <ul class="nav navbar-nav pull-right">
                 <li><a href="aboutus.html">About Us |</a></li>
                 <li><a href="howdoesitwork.html">How it works |</a></li>
+                <li><a href="search.html">Explore tutorials |</a></li>
                 <li><a href="contactus.html">Contact |</a></li>
+                <li><a href="#signInModal" data-toggle="modal">Sign in </a></li>
                 <!--<li><a href="#signInModal" data-toggle="modal">Sign in </a></li>-->
               </ul>
               <!--<p class="navbar-text navbar-right navbar-link" style="margin-right:70px;"><a href="#signInModal" data-toggle="modal">Sign in</a></p>-->
@@ -120,7 +122,7 @@
         </div>
 
         <label for="filterFormat">Average Rating</label>
-          <ul class="list-group">
+          <ul class="list-group" style="cursor:pointer">
              <li class="list-group-item"><img src="img/filter_avgrating1.png" alt="..."></li>
              <li class="list-group-item"><img src="img/filter_avgrating2.png" alt="..."></li>
              <li class="list-group-item"><img src="img/filter_avgrating3.png" alt="..."></li>
@@ -451,12 +453,10 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
           <button class="btn btn-lg btn-primary btn-block" id="searchSignIn">Sign in</button>
-          <button class="btn btn-lg btn-primary btn-block" id="searchRegister">First Time? Register</button>
-          <h6><p class="text-muted">*Simply respects your privacy and will never share your information with a third-party. Creating an account allows you to save a history of your tutorials and manage personalized content.</p></h6>
+          <button class="btn btn-lg btn-primary btn-block" id="searchRegister">Register</button>
         </form>
       </div>
     </div>
-
   </div>
 
      <div id="recordOwnVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -472,10 +472,10 @@
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">
+                  <button type="button" class="btn btn-default btn-lg" id="recordAddVideo">
                     <span class="glyphicon glyphicon-plus" id="search_add"></span>RECORD
                   </button>
-                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="addVideo">STOP
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal" aria-hidden="true" style:"float:left" id="searchStopVideo">STOP
                   </button>
                   
                    

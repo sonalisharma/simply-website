@@ -11,8 +11,22 @@ console.log("Ready");
 		  }
 		  e.preventDefault();
 	});
+
+
 */	
+
 jQuery(".all_tutorials").show();
+
+        var url = window.location;
+        // Will only work if string in href matches with location
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+        // Will also work for relative and absolute hrefs
+        $('ul.nav a').filter(function() {
+            return this.href == url;
+        }).parent().addClass('active');
+
+        $('navbar-header a[href="'+ url +'"]').parent().addClass('active');
 
 
     jQuery('.nav-pills li a').on('click', function (e) {
