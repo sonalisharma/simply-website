@@ -78,16 +78,19 @@
 
 <div class="container">
       <div class="row">
-        <div class="navbar-form navbar-left" role="search" style="margin-top:-10px;">
+         <div class="col-md-2">
+         </div>
+        <div class="col-md-8">
+        <div class="navbar-form navbar-left" role="search" style="margin-top:-10px;margin-left:-30px;">
                 <input type="text" class="form-control" placeholder="Search tutorials">
                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                 Can't find the tutorial? Record your own and save <a href="#recordOwnVideo" data-toggle="modal"><span class="glyphicon glyphicon-camera" style="font-size:2em;"></span></a>
         </div>
       </div>
+      </div>
       <!-- Example row of columns -->
   <div class="row">
-    <div class="col-md-2">
-
+    <div class="col-md-2" style="">
         <ul class="nav nav-pills nav-stacked">
           <li class="active"><a href=".all_tutorials" data-toggle="tab">All Tutorials</a></li>
           <li><a href=".all_basic" data-toggle="tab">Basic</a></li>
@@ -157,10 +160,11 @@
         </div>
          
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8" style="background-color:white;">
 
       <div class="tab-content">
         <div class="tab-pane all_basic all_tutorials"> 
+
           <h5>BASIC</h5>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
@@ -188,6 +192,7 @@
                   <p>PREVENT PHISHING ATTACK</p>
                 </div>
           </div>
+
           <div class="row">
                 <div class="col-sm-6 col-md-3 text">
                   <a href="#myModalText" class="thumbnail" data-toggle="modal">
@@ -197,7 +202,9 @@
                </div>
           </div>
         </div>
+        
         <div class="tab-pane all_communication all_tutorials"> 
+          <hr>
           <h5>COMMUNICATION</h5>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
@@ -245,8 +252,10 @@
                   <p>SETUP EMAIL</p>
                </div>
           </div>
-        </div>  
+        </div> 
+        
         <div class="tab-pane all_internet all_tutorials"> 
+          <hr> 
           <h5>INTERNET</h5>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
@@ -312,7 +321,9 @@
                 </div>
           </div>
         </div>
+
         <div class="tab-pane all_security all_tutorials"> 
+           <hr>
           <h5>SECURITY</h5>
             <div class="row">
                 <div class="col-sm-6 col-md-3 text">
