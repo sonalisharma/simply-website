@@ -115,7 +115,7 @@ jQuery(".all_tutorials").show();
 	jQuery("#indexSignIn").click(function(event)
      {
      	console.log("search sign in");
-     	window.location.href='user1.html';
+     	window.location.href='search1.html';
      	event.preventDefault();
      });
 
