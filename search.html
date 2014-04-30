@@ -66,7 +66,7 @@
                 <li><a href="howdoesitwork.html">How it works |</a></li>
                 <li><a href="search.html">Explore tutorials |</a></li>
                 <li><a href="contactus.html">Contact |</a></li>
-                <li><a href="search1.html" data-toggle="modal">Sign in </a></li>
+                <li><a href="#signInModal" data-toggle="modal">Sign in </a></li>
                 <!--<li><a href="#signInModal" data-toggle="modal">Sign in </a></li>-->
               </ul>
               <!--<p class="navbar-text navbar-right navbar-link" style="margin-right:70px;"><a href="#signInModal" data-toggle="modal">Sign in</a></p>-->
@@ -526,7 +526,7 @@
          <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
           </div>
-        <form class="form-signin" role="form" id="searchSignInform">
+        <form class="form-signin" role="form" id="indexSignInform">
           <h2 class="form-signin-heading">Please sign in</h2>
           <input type="text" class="form-control" placeholder="Name" required autofocus>
           <input type="email" class="form-control" placeholder="Email address" required autofocus>
@@ -534,11 +534,13 @@
           <label class="checkbox">
             <input type="checkbox" value="remember-me"> Remember me
           </label>
-          <button class="btn btn-lg btn-primary btn-block" id="searchSignIn">Sign in</button>
-          <button class="btn btn-lg btn-primary btn-block" id="searchRegister">Register</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="indexSignIn">Sign in</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="indexRegister">First Time? Register here</button>
+          <h6><p class="text-muted">*Simply respects your privacy and will never share your information with a third-party. Creating an account allows you to save a history of your tutorials and manage personalized content.</p></h6>
         </form>
       </div>
     </div>
+
   </div>
 
      <div id="recordOwnVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
