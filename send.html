@@ -79,43 +79,33 @@
            <h4>Hi,</h4>
           <div class="checkbox-inline" style="margin-top:-65px;margin-left:20px;">
             <label>
-              <input type="text" value="" id="greetingText" required>
+              <input type="text" value="" id="greetingText" placeholder="e.g. mom,dad"required>
             </label>
             <label>
               Recipient's Email:
-              <input type="text" value=""  id="recipientEmail">
+              <input type="text" value=""  id="recipientEmail" placeholder="e.g. alex@abc.com">
             </label> 
           </div>
-          <h4>Hope you will find this helpful and I also want to say that,</h4>
+          <h4>This is for you, I hope you will find it useful!!   </h4>
+          <span class="text-muted">(type in additional personal message below to send along with the tutorial)</span>
+          <br>
         <textarea rows="4" cols="80" id="messageText">
         </textarea>
         <p>Record your own video message (optional)</p>
         <a href="#recordOwnVideo" data-toggle="modal"><span class="glyphicon glyphicon-camera" style="font-size:2em;"></span></a>
+        <br>
+        <br>
+            <label>
+                Assign Tags:
+              <input type="text" value="" id="tag" placeholder="e.g.wifi setup, internet">
+            </label>
+
         <hr>
-        <!--
-        <h4>Greetings</h4>
-          <div class="checkbox-inline">
-            <label>
-              <input type="checkbox" value="" name>
-              Love
-            </label>
-          </div>
-          <div class="checkbox-inline">
-            <label>
-              <input type="checkbox" value="" name="chkGreeting">
-              Let me know how you find it!!
-            </label>
-          </div>
-          <div class="checkbox-inline">
-            <label>
-              <input type="checkbox" value="" name="chkGreeting">
-              Goodluck!!
-            </label>
-          </div> -->
             <label>
               Your name:
               <input type="text" value="" id="senderName">
             </label>
+
             
             <hr>
         <button type="button" class="btn btn-default btn-lg" id="preview">

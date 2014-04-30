@@ -79,103 +79,127 @@
           <div class="form-group has-success" id="successMsg">
             <input type="text" class="form-control" id="inputSuccess1" value="Congratulations, you just sent the tutorial!">
           </div>
-          <div class="row">
-          <div class="col-sm-6 col-md-2">
-              <h5>TUTORIAL</h5>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <h5>DESCRIPTION</h5>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <h5>RECIPIENT</h5>
-          </div>
-           <div class="col-sm-6 col-md-1">
-            <h5>TAG</h5>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <h5>DATE SENT</h5>
-          </div>
+      <h5>List of tutorials sent by you</h5>
+      <h6 class="text-muted">You can select one or more tutorials below to either a send reminder or send to a new recipient</h6>
+      
+      <div class="row">
 
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-sm-6 col-md-2">
-              <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/results/Video_ComputerTVConnect.png" 
-                     alt="Generic placeholder thumbnail">  
-              </a>
-              <p>FIX A SLOW COMPUTER</p>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <p>Fix a slow computer: how to free up memory on your hard drive</p>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <p>Mom</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <p>Family</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <p>04/04/2014</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <button class="btn btn-mini btn-primary" type="button">Resend</button>
-          </div>
-        </div>
-
-                <div class="row">
-          <div class="col-sm-6 col-md-2">
-              <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/results/WirelessNetwork.png" 
-                     alt="Generic placeholder thumbnail">  
-              </a>
-              <p>WIFI SETUP</p>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <p>How to set up a wireless network at home</p>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <p>Mom</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <p>Family</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <p>01/04/2014</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <button class="btn btn-mini btn-primary" type="button">Resend</button>
-          </div>
-
-        </div>
-
-         <div class="row">
-          <div class="col-sm-6 col-md-2">
-              <a href="#myModalVideo" class="thumbnail" data-toggle="modal">
-                     <img src="img/results/EmailAttachment.png" 
-                     alt="Generic placeholder thumbnail">  
-              </a>
-              <p>OPEN EMAIL ATTACHMENTS</p>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <p>How to open email attachments</p>
-          </div>
-          <div class="col-sm-6 col-md-2">
-            <p>Dad</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <p>Family</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <p>03/04/2014</p>
-          </div>
-          <div class="col-sm-6 col-md-1">
-            <button class="btn btn-mini btn-primary" type="button">Resend</button>
-          </div>
-
-        </div>
+      <div class="col-md-12">
+      <table class="table table-hover" style="background-color:#F0F0F0 ">
+            <thead>
+                <tr>
+                    <th class="col-md-2">Title <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Sent to <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Tags <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Format <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Date Sent <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>   </th>
+                    <th class="col-md-4">Message </th>
+                    <th class="col-md-1">Created by you? <span class="glyphicon glyphicon-sort"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-2"><input type="checkbox" value=""><a href="#myModalVideo" data-toggle="modal"> Wifi Set Up</a></td>
+                    <td class="col-md-1">Mom</td>
+                    <td class="col-md-1">wifi, internet</td> 
+                    <td class="col-md-1">Video</td>
+                    <td class="col-md-1">03/04/2014</td>
+                    <td class="col-md-4">I hope you will enjoy this video Mom!! Looking forward to hearing from you</td>  
+                    <td class="col-md-1">No</td>                 
+                </tr>
+                <tr>
+                    <td class="col-md-2"> <input type="checkbox" value=""><a href="#myModalVideo" data-toggle="modal"> Fix a slow computer</a></td>
+                    <td class="col-md-1">Dad</td>
+                    <td class="col-md-1">slow computer, memory</td> 
+                    <td class="col-md-1">Video</td>
+                    <td class="col-md-1">03/05/2014</td>
+                    <td class="col-md-4">Dad, I know you have been facing a lot of problem because of the slowness of your computer. This tutorial is great and will help you fix the problem.</td> 
+                    <td class="col-md-1">No</td>                   
+                </tr>
+                <tr>
+                    <td class="col-md-2"><input type="checkbox" value=""><a href="#myModalVideo" data-toggle="modal"> Open email attachment</a></td>
+                    <td class="col-md-1">Mom</td>
+                    <td class="col-md-1">emails, attachment</td> 
+                    <td class="col-md-1">Video</td>
+                    <td class="col-md-1">03/07/2014</td>
+                    <td class="col-md-4">Mom, this is a great tutorial which will help you open the email attachments I sent you last week.</td> 
+                    <td class="col-md-1">No</td>                     
+                </tr>
+                <tr>
+                    <td class="col-md-2"><input type="checkbox" value=""><a href="#myModalVideo" data-toggle="modal"> Skype chat</a></td>
+                    <td class="col-md-1">Granny</td>
+                    <td class="col-md-1">video chat, skype</td> 
+                    <td class="col-md-1">Video</td>
+                    <td class="col-md-1">03/08/2014</td>
+                    <td class="col-md-4">Hey granny, I know you have been wanting to chat with us. Now you can do it all by yourself. This is a very easy to follow tutorial that will help you set up a skype chat. I am waiting for your skype call now :)</td>  
+                    <td class="col-md-1">Yes</td>                  
+                </tr>
+            </tbody>
+        </table>
       </div>
+    <a href="user.html"><button type="button" class="btn btn-primary pull-right">Send reminder</button></a>
+    <a href="send.html"><button type="button" class="btn btn-primary pull-right">Send to new recipient</button></a>
+    </div>
+   
 
+    <h5>List of tutorials created by you</h5>
+      <div class="row">
+      <div class="col-md-12">
+        <table class="table table-hover"  style="background-color:#F0F0F0 ">
+            <thead>
+                <tr>
+                    <th class="col-md-1">Title <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Tags <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Format <span class="glyphicon glyphicon-sort"></span></th>
+                    <th class="col-md-1">Duration <span class="glyphicon glyphicon-sort-by-attributes-alt"></span></th>
+                    <th class="col-md-1">Date Created <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>   </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-2"><input type="checkbox" value=""><a href="#myModalVideo" data-toggle="modal"> Skype Chat</a></td></td>
+                    <td>video chat, skype</td>
+                    <td>Video</td> 
+                    <td>3m 50 sec</td> 
+                    <td>04/01/2014</td>                 
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+    <a href="#"><button type="button" class="btn btn-primary pull-right" id="delTutorial">Delete</button></a>
+    </div>
+
+    </div>
+
+        <div id="myModalVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4>PREVIEW</h4>
+                </div>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                    
+                    <a href="#" class="thumbnail"><img src="img/preview.jpeg"></a> 
+                  </div>
+                  <div class="col-md-8">
+                    <h4>Wifi setup</h4>
+                    <h5>Date published: <span class="text-muted"> Aug 4, 2012</span></h5>
+                    <h5>Author: <span class="text-muted"> Lou Molina</span></h5>
+                    <h5>Length: <span class="text-muted"> 3m 47s</span></h5>
+                    <h5>Description: <span class="text-muted">Are you reay to set up your own wifi connection. This tutorial helps you do just that!!</span></h5>
+                    <h5>Tags: <span class="text-muted"> wifi, internet</span></h5>
+                  </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

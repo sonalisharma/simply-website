@@ -51,7 +51,25 @@ jQuery(".all_tutorials").show();
         //jQuery( "tab-pane" ).toggle();
         //$(this).tab('show');
     });
+    jQuery('#addAudio').on('click', function (e) {
+        console.log("Reached add");
+        e.preventDefault();
+        var num = parseInt(jQuery("#num_cart").text());
+        console.log(jQuery("#num_cart").html(num+1));
 
+        //jQuery( "tab-pane" ).toggle();
+        //$(this).tab('show');
+    });
+
+    jQuery('#addText').on('click', function (e) {
+        console.log("Reached add");
+        e.preventDefault();
+        var num = parseInt(jQuery("#num_cart").text());
+        console.log(jQuery("#num_cart").html(num+1));
+
+        //jQuery( "tab-pane" ).toggle();
+        //$(this).tab('show');
+    });
 
      jQuery('#send_preview').on('click', function (e) {
     	console.log("Reached add");
@@ -64,18 +82,13 @@ jQuery(".all_tutorials").show();
 
      jQuery('#preview').on("click",function(e) {
      	console.log(jQuery("#greetingText").val());
-     	var html = 'Hi '+ jQuery("#greetingText").val()+'<p>Hope you will find this helpful and I also want to say that,';
+     	var html = 'Hi '+ jQuery("#greetingText").val()+'<p>This is for you, I hope you will find it useful!!';
      	html = html + jQuery("#messageText").val();
      	html = html + '<p>Love,</p>' + jQuery("#senderName").val();
-     	$('input:checkbox[name=chkGreeting]').each(function() 
-		{    
-		    if(jQuery(this).is(':checked'))
-		    console.log(html);
-
-		});
 
 		jQuery("#modalPreview .modal-body").html("");
-		html = html + '<img src="img/send_preview.png" style="zoom:0.75"/>'
+
+		html = html + '<p>Click on the link below to view the tutorial:<p> <a href="https://www.youtube.com/watch?v=FLhOceZ5CRE">https://www.youtube.com/watch?v=FLhOceZ5CRE</a></p>'
 		jQuery("#modalPreview .modal-body").append(html);
 
      });
