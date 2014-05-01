@@ -93,12 +93,20 @@ jQuery(".all_tutorials").show();
 
      });
 
-     jQuery("#searchSignInform").submit(function(event)
+     jQuery("#searchReadySignInform").submit(function(event)
      {
      	console.log("search sign in");
      	jQuery("#successMsg").show();
      	window.location.href='send.html';
      	event.preventDefault();
+     });
+
+    jQuery("#searchSignInform").submit(function(event)
+     {
+        console.log("search sign in");
+        jQuery("#successMsg").show();
+        window.location.href='search1.html';
+        event.preventDefault();
      });
 
 
